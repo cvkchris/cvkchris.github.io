@@ -1,5 +1,5 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../components/ui/card"
+import { Badge } from "../components/ui/badge"
 import { MapPin, Award, Briefcase, GraduationCap, Calendar } from "lucide-react"
 
 interface Experience {
@@ -38,7 +38,7 @@ export default function Experience({ experiences }: ExperienceProps) {
         <div className="relative">
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-300"></div>
           <div className="space-y-8">
-            {experiences.map((exp, index) => (
+            {Array.isArray(experiences) && experiences.map((exp, index) => (
               <div key={index} className="relative flex items-start space-x-6">
                 <div className="flex-shrink-0 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg">
                   {getExperienceIcon(exp.type)}

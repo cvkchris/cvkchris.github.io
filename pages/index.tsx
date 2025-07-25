@@ -1,15 +1,14 @@
-"use client"
 
 import { useState, useEffect } from "react"
-import "@/styles/globals.css"
-import Navbar from "@/components/Navbar"
-import Hero from "@/components/Hero"
-import About from "@/components/About"
-import Skills from "@/components/Skills"
-import Projects from "@/components/Projects"
-import Experience from "@/components/Experience"
-import Contact from "@/components/Contact"
-import Footer from "@/components/Footer"
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
+import About from "../pages/about"
+import Skills from "./skills"
+import Projects from "./projects"
+import Experience from "./experience"
+import Contact from "./contact"
+import Footer from "../components/Footer"
+
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

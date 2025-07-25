@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "./ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
 
 interface HeroProps {
