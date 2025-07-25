@@ -16,11 +16,11 @@ interface GitHubRepo {
   html_url: string
 }
 
-export default function ProjectCard({ repoName , userName }: { repoName: string, userName: string }) {
+export default function ProjectCard({ repoName }: { repoName: string }) {
   const [repoData, setRepoData] = useState<GitHubRepo | null>(null)
 
   useEffect(() => {
-    fetch(`https://api.github.com/repos/${userName}/${repoName}`)
+    fetch(`https://api.github.com/repos/cvkchris/${repoName}`)
       .then((res) => res.json())
       .then((data) => setRepoData(data))
       .catch(console.error)
