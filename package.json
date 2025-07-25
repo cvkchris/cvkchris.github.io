@@ -5,7 +5,7 @@
   "homepage": "https://cvkchris.github.io/profile",
   "scripts": {
     "deploy": "gh-pages -d .next",
-    "build": "next build && next export ",
+    "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
