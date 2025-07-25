@@ -64,49 +64,23 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "WayfinderBot - Warehouse Navigation using Reinforcement Learning",
-      description:
-        "A grid-based warehouse navigation simulation using Q-Learning. The bot learns to navigate \
-         efficiently from start to goal while avoiding obstacles (walls). It also visualizes the learned \
-          Q-values using heatmaps and tracks agent performance.",
-      github: "https://github.com/cvkchris/WayfinderBot",
-      demo: "https://github.com/cvkchris/WayfinderBot",
       repository: "WayfinderBot",
-      tech: ["Python", "Matplotlib", "Reinforcement Learning", "Q-Learning", "NumPy"],
     },
     {
-      title: "SafeVision - Real-time Violence Detection System Using Deep Learning",
-      description:
-        "SafeVision is a real-time crowd surveillance system designed to detect violent behavior in video footage \
-        using deep learning models. The goal is to assist in public safety monitoring by automatically flagging \
-        potential violent actions for rapid response.",
-      github: "https://github.com/cvkchris/Safe-Vision",
-      demo: "https://github.com/cvkchris/Safe-Vision",
       repository: "Safe-Vision",
-      tech: ["Python", "Flask", "Tensorflow", "Telegram Bot API", "OpenCV"],
     },
     {
-      title: "Supply Chain Management",
-      description:
-        "A simple Supply Chain Management Desktop Application for stationary products made using Java and Swing. This \
-        application is designed to streamline the management of stationary supplies, allowing for efficient inventory \
-        control, order processing, and data visualization through a user-friendly dashboard.",
-      github: "https://github.com/cvkchris/SupplyChainManagement",
+      repository: "Fluxkart"
+    },
+    {
       repository: "SupplyChainManagement",
-      demo:"https://github.com/cvkchris/SupplyChainManagement",
-      tech: ["Java", "Swing", "MySQL", "JDBC"],
     },
     {
-      title: "Heart Disease Prediction",
-      description:
-        "AI-powered heart health prediction app designed to assist individuals in making informed decisions \
-        about their well-being. This application leverages machine learning to assess the risk of heart disease \
-        based on key health indicators.",
-      github: "https://github.com/cvkchris/Heart-Disease-Prediction",
       repository: "Heart-Disease-Prediction",
-      demo: "https://heart-disease-prediction-cvk.streamlit.app/",
-      tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Streamlit", "Matplotlib", "Seaborn"],
     },
+    {
+      repository: "Brain-Tumor-Analysis",
+    }
   ]
 
   const experiences = [

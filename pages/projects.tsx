@@ -1,12 +1,7 @@
 import ProjectCard from "./projectcard"
 
 interface Project {
-  title: string
-  description: string
-  github: string
   repository: string
-  demo: string
-  tech: string[]
 }
 
 interface ProjectsProps {
