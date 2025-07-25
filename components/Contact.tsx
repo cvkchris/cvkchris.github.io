@@ -3,7 +3,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin } from "lucide-react"
 
-export default function Contact() {
+interface ContactProps {
+  scrollToSection: (sectionId: string) => void
+}
+export default function Contact({ scrollToSection }: ContactProps) {
   return (
     <section id="contact" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
