@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cvkchris.github.io/profile",
+  "homepage": "https://cvkchris.github.io/",
   "scripts": {
     "deploy": "gh-pages -d out",
     "build": "next build",
