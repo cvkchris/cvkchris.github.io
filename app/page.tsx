@@ -1,21 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import {
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
-  Menu,
-  X,
-  MapPin,
-  Phone,
-  Calendar,
-  Award,
-  Briefcase,
-  GraduationCap,
-} from "lucide-react"
-
+import "@/styles/globals.css"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero"
 import About from "@/components/About"

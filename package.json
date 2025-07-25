@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://cvkchris.github.io/profile",
   "scripts": {
-    "deploy": "gh-pages -d .next",
+    "deploy": "gh-pages -d out",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
