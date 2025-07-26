@@ -14,6 +14,7 @@ interface GitHubRepo {
     html_url: string
   }
   html_url: string
+  teams_url: string
 }
 
 export default function ProjectCard({ repoName }: { repoName: string }) {
@@ -30,11 +31,11 @@ export default function ProjectCard({ repoName }: { repoName: string }) {
 
   return (
     <div className="flex p-5 border rounded-2xl shadow-sm bg-white max-w-2xl items-center space-x-4">
-      <img
+      {/* <img
         src={repoData.owner.avatar_url}
         alt="Owner Avatar"
         className="w-20 h-20 rounded-full"
-      />
+      /> */}
       <div className="flex-1">
         <h2 className="text-xl font-semibold text-blue-600">
           {repoData.owner.login}/<span className="text-black">{repoData.name}</span>
@@ -46,6 +47,7 @@ export default function ProjectCard({ repoName }: { repoName: string }) {
           <span>⭐ {repoData.stargazers_count} Stars</span>
           <span>🍴 {repoData.forks_count} Forks</span>
           <span>❗ {repoData.open_issues_count} Issues</span>
+          <span>👤 {repoData.teams_url}</span>
         </div>
         <a
           href={repoData.html_url}
