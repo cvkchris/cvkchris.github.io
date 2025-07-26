@@ -75,10 +75,10 @@ jobs:
         uses: actions/deploy-pages@v4
 
       # Optionally also deploy via gh-pages (if you have a custom npm script)
-      - name: Deploy with gh-pages (optional)
-        if: github.ref == 'refs/heads/main' # Only deploy on main branch
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Deploy with gh-pages (optional)
+      #   if: github.ref == 'refs/heads/main' # Only deploy on main branch
+      #   run: |
+      #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+      #     npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
